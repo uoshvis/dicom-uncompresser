@@ -27,5 +27,5 @@ gdcmconv [options] file-in file-out
 Run from the inside uncompressed dir
 
 ```
-$ sh ./dicom-uncompresser <outputDir> 
+$ sh ./uncompress-dicom <outputDir> 
 ```
