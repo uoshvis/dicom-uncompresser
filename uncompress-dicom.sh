@@ -1,33 +1,26 @@
 #!/bin/bash
-echo "RUN FROM the INSIDE UNCOMPRESSED DIR"
+
+echo "RUN FROM the INSIDE DIR"
 
 echo "Starting DICOM uncompresser"
 
 # check if args exist
-
 if [ -z "$1" ]
 then
-    echo "Please provide: sh ./script.sh <inputDir> <outputDir>"
+    echo "Please provide output dir: sh ./script.sh <outputDir>"
     exit 0
 fi
 
 # check args
-
 if [ $# -eq 1 ]
 then
-    dirIn=$1
     dirOut="outputDir"
-elif [ $# -eq 2 ]
-then
-    dirIn=$1
-    dirOut=$2
 else
-    echo "Too many args"
+    echo "Too many args
     exit 0
 fi
 
 #Create output dir
-
 { # try
     mkdir $dirOut &&
     echo "Output directory created: /${dirOut}"
@@ -39,7 +32,6 @@ fi
 }
 
 # Convert files
-cd $dirIn
 
 for FILE in *.dcm;
     do {
