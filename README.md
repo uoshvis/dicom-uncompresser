@@ -24,3 +24,8 @@ gdcmconv [options] file-in file-out
 
 #### Bash script
 
+Run from the inside uncompressed dir
+
+```
+sh ./dicom-uncompresser <outputDir> 
+```
