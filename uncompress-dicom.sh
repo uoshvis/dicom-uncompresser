@@ -7,7 +7,7 @@ echo "Starting DICOM uncompresser"
 # check if args exist
 if [ -z "$1" ]
 then
-    echo "Please provide output dir: sh ./script.sh <outputDir>"
+    echo "Please provide output dir: sh ./uncompress-dicom.sh <outputDir>"
     exit 0
 fi
 
